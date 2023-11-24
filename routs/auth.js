@@ -2,11 +2,11 @@ import express from "express"
 import validate from "../middleware/validate.js"
 import { loginController, registerController } from "../controllers/auth.js"
 
-const router = express.Router()
+const authRouter = express.Router()
 
-router.post("/register",validate("register"), registerController)
+authRouter.post("/register",validate("register"), registerController)
 
-router.post("/login", validate("login"),loginController)
+authRouter.post("/login", validate("login"),loginController)
 
 
-export default router
+export default authRouter

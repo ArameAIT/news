@@ -26,7 +26,7 @@ export default function validate(pathname) {
             res.status(401).json(responseObj)
             return
         }
-        if (pathname == "register") {
+        else if (pathname == "register") {
             const registerSchema = z.object({
                 fullName: z.string(),
                 email: z.string().email(),
@@ -38,6 +38,26 @@ export default function validate(pathname) {
             }
             const errorMessage = {}
             registerData.error.issues.map((messege) => {
+                const paramName = messege.path[0]
+                return errorMessage[paramName] = messege.message
+
+            })
+            responseObj.error = {
+                message: errorMessage
+            }
+            res.status(401).json(responseObj)
+            return
+        }else if(pathname == "createNews"){
+            const createNewsSchema = z.object({
+                title: z.string(),
+                discription: z.string()
+            });
+            const createData = createNewsSchema.safeParse(req.body);
+            if (createData.success) {
+                return next()
+            }
+            const errorMessage = {}
+            createData.error.issues.map((messege) => {
                 const paramName = messege.path[0]
                 return errorMessage[paramName] = messege.message
 
