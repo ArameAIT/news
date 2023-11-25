@@ -4,7 +4,7 @@
             "id": 0,
             "fullName": "Admin",
             "email": "admin@gmail.com",
-            "password" : 0
+            "password": 0
         },
         {
             "id": 1700847702489,
@@ -13,16 +13,5 @@
             "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5"
         }
     ],
-    "news": [
-        {
-            "id": 1700852341222,
-            "title": "Man City v Liverpool: Jurgen Klopp says Pep Guardiola's team are strongest in the world",
-            "discription": "Manchester City host Liverpool on Saturday in a game that could shape the course of the Premier League title race - but Jurgen Klopp says it is not a test of how close the Reds have got to the champions. City have won five of the past six titles with Liverpool clinching the other - the only two champions since Chelsea's 2017 triumph. City's ex-Bayern Munich boss Guardiola and Liverpool's former Borussia Dortmund manager Klopp have faced each other more than they have encountered any other manager - 28 times. Klopp has won 11, with Guardiola successful in 10.He made me better, said Guardiola of Klopp."
-        },
-        {
-            "id": 1700854155338,
-            "title": "Man City v Liverpool: Jurgen Klopp says Pep Guardiola's team are strongest in the world",
-            "discription": "Manchester City host Liverpool on Saturday in a game that could shape the course of the Premier League title race - but Jurgen Klopp says it is not a test of how close the Reds have got to the champions. City have won five of the past six titles with Liverpool clinching the other - the only two champions since Chelsea's 2017 triumph. City's ex-Bayern Munich boss Guardiola and Liverpool's former Borussia Dortmund manager Klopp have faced each other more than they have encountered any other manager - 28 times. Klopp has won 11, with Guardiola successful in 10.He made me better, said Guardiola of Klopp."
-        }
-    ]
+    "news": []
 }
